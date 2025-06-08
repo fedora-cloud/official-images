@@ -60,7 +60,7 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git checkout -b ${{ steps.vars.outputs.BRANCH_NAME }}
+          git checkout ${{ steps.vars.outputs.BRANCH_NAME }}
           
           # Check if there are changes to commit
           if git diff --quiet library/fedora; then
@@ -80,5 +80,5 @@ jobs:
         run: |
           gh pr create \
             --title "${{ steps.vars.outputs.COMMIT_MESSAGE }}" \
-            --body "This is an automated PR to update the Fedora Docker official image commit hashes. It automatically discovers new branches and updates existing ones." \
+            --body "This is an automated PR to update the Fedora Docker official image commit hashes." \
             --base master
