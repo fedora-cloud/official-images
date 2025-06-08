@@ -1,0 +1,101 @@
+name: Update Fedora Official Image
+on:
+  schedule:
+    - cron: "0 8 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update-fedora:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set dynamic variables
+        id: vars
+        run: |
+          echo "BRANCH_NAME=fedora_update_$(date -u +'%Y%m%d')" >> $GITHUB_OUTPUT
+          echo "COMMIT_MESSAGE=Update Fedora $(date -u +'%Y%m%d')" >> $GITHUB_OUTPUT
+
+      - name: Install Goose CLI
+        run: |
+          mkdir -p /home/runner/.local/bin
+          curl -fsSL https://github.com/block/goose/releases/download/stable/download_cli.sh \
+          | CONFIGURE=false INSTALL_PATH=/home/runner/.local/bin bash
+          echo "/home/runner/.local/bin" >> $GITHUB_PATH
+
+      - name: Configure Goose
+        env:
+          GOOSE_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: |
+          mkdir -p ~/.config/goose
+          cat <<EOF > ~/.config/goose/config.yaml
+          GOOSE_PROVIDER: "openrouter"
+          GOOSE_MODEL: "google/gemini-flash-1.5"
+          keyring: false
+          EOF
+
+      - name: Generate Dynamic Goose Instructions
+        id: instructions
+        run: |
+          # Discover the GitRepo from the library file
+          REPO_ID=$(grep 'GitRepo:' library/fedora | sed 's/GitRepo: https:\/\/github.com\///' | sed 's/\.git//')
+          echo "Discovered Repository: $REPO_ID"
+
+          # Fetch all branches from the repo, filter for numeric-only names, and sort them
+          BRANCHES=$(curl -s "https://api.github.com/repos/$REPO_ID/branches" | jq -r '.[].name' | grep -E '^[0-9]+$' | sort -rn)
+          echo "Found official branches: $BRANCHES"
+
+          # Create the dynamic instructions for Goose
+          INSTRUCTIONS="You are an AI assistant expert at managing Fedora's official image definition file, 'library/fedora'. Your task is to synchronize the file with the true source of truth: the upstream repository's branches.\n\n"
+          INSTRUCTIONS+="The official release branches in the '$REPO_ID' repository are: \n$(echo "$BRANCHES" | sed 's/^/ - /g')\n\n"
+          INSTRUCTIONS+='Follow these steps precisely:\n'
+          INSTRUCTIONS+='1. For each branch listed above, find its latest commit hash by using `curl` to query the GitHub API. The endpoint is `https://api.github.com/repos/$REPO_ID/commits/<branch>` and you need the `.sha` value.\n'
+          INSTRUCTIONS+='2. Read the contents of the local `library/fedora` file.\n'
+          INSTRUCTIONS+='3. Modify the file in memory to synchronize it with the official branches:\n'
+          INSTRUCTIONS+='  a. **For existing branches**: If a block for a branch already exists in the file, update its `GitCommit` field with the new hash you discovered.\n'
+          INSTRUCTIONS+='  b. **For new branches**: If a block for an official branch does *not* exist, you must create it. The new block must be inserted in the correct, version-sorted position (descending). Use the format of the other entries as a template, ensuring all necessary fields (`Tags`, `Architectures`, `GitFetch`, `GitCommit`, and all `*-Directory` lines) are included.\n'
+          INSTRUCTIONS+='4. After processing all branches, overwrite the local `library/fedora` file with your updated content.\n'
+
+          # Set the multiline output for the next step
+          echo "instructions<<EOF" >> "$GITHUB_OUTPUT"
+          echo "$INSTRUCTIONS" >> "$GITHUB_OUTPUT"
+          echo "EOF" >> "$GITHUB_OUTPUT"
+
+      - name: Run Goose to update fedora file
+        env:
+          GOOSE_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: |
+          goose run --instructions "${{ steps.instructions.outputs.instructions }}"
+      
+      - name: Create Branch and Commit Changes
+        id: commit
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b ${{ steps.vars.outputs.BRANCH_NAME }}
+          
+          # Check if there are changes to commit
+          if git diff --quiet library/fedora; then
+            echo "No changes detected in library/fedora. Exiting."
+            echo "NO_CHANGES=true" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+          
+          git add library/fedora
+          git commit -m "${{ steps.vars.outputs.COMMIT_MESSAGE }}"
+          git push -u origin ${{ steps.vars.outputs.BRANCH_NAME }}
+
+      - name: Create Pull Request
+        if: steps.commit.outputs.NO_CHANGES != 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh pr create \
+            --title "${{ steps.vars.outputs.COMMIT_MESSAGE }}" \
+            --body "This is an automated PR to update the Fedora Docker official image commit hashes. It automatically discovers new branches and updates existing ones." \
+            --base master
