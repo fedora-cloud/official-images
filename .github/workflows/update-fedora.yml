@@ -9,7 +9,7 @@ permissions:
   pull-requests: write
 
 env:
-  PROVIDER_API_KEY:  ${{ secrets.OPENROUTER_API_KEY }}
+  OPENROUTER_API_KEY:  ${{ secrets.OPENROUTER_API_KEY }}
 
 jobs:
   update-fedora:
