@@ -54,7 +54,7 @@ jobs:
         env:
           GOOSE_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         run: |
-          goose run --instructions "${{ steps.instructions.outputs.instructions }}"
+          goose run --instructions instructions.txt
       
       - name: Create Branch and Commit Changes
         id: commit
