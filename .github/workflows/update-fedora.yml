@@ -53,7 +53,7 @@ jobs:
 
       - name: Run Goose to update fedora file
         run: |
-          goose run --instructions instructions.txt
+          goose run --with-builtin "developer" --instructions instructions.txt
       
       - name: Create Branch and Commit Changes
         id: commit
