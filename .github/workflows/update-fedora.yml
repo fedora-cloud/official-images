@@ -54,7 +54,16 @@ jobs:
         env:
           GOOSE_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         run: |
-          goose run --instructions instructions.txt
+          goose run --instructions instructions.txt | \
+                  # Remove ANSI color codes
+                  sed -E 's/\x1B\[[0-9;]*[mK]//g' | \
+                  # Remove session/logging lines
+                  grep -v "logging to /home/runner/.config/goose/sessions/" | \
+                  grep -v "^starting session" | \
+                  grep -v "^Closing session" | \
+                  # Trim trailing whitespace
+                  sed 's/[[:space:]]*$//' \
+                  > pr_comment.txt
       
       - name: Create Branch and Commit Changes
         id: commit
