@@ -1,0 +1,78 @@
+name: Update Fedora Official Image
+on:
+  schedule:
+    - cron: "0 8 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update-fedora:
+    name: Update Fedora Images
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set dynamic variables
+        id: vars
+        run: |
+          echo "BRANCH_NAME=fedora_update_$(date -u +'%Y%m%d')" >> $GITHUB_OUTPUT
+          echo "COMMIT_MESSAGE=Update Fedora $(date -u +'%Y%m%d')" >> $GITHUB_OUTPUT
+
+      - name: Update with latest official-images
+        run: |
+          git config --local user.email "container-sig@lists.fedorahosted.org"
+          git config --local user.name "Fedora Container SIG"
+          git remote add upstream https://github.com/docker-library/official-images.git || true
+          git pull --rebase upstream master
+
+      - name: Create branch for new update
+        id: create-branch
+        run: |
+          git branch --track ${{ steps.vars.outputs.BRANCH_NAME }} upstream/master
+          git checkout ${{ steps.vars.outputs.BRANCH_NAME }}
+          git clone https://github.com/fedora-cloud/docker-brew-fedora.git /tmp/docker-brew-fedora
+          
+          # Loop through Fedora versions 41, 42, 43, and 44
+          for version in 41 42 43 44; do
+            echo "Processing Fedora version $version..."
+            cd /tmp/docker-brew-fedora
+            git checkout $version
+            COMMIT_HASH=$(git rev-parse HEAD)
+            echo "Version $version commit hash: $COMMIT_HASH"
+            
+            # Update the library/fedora file with the new commit hash for the specific version
+            cd ${{ github.workspace }}
+            # Find the Tags line for the current version and update the GitCommit line in that section
+            awk -v version="$version" -v commit="$COMMIT_HASH" '
+              /^Tags: / && $0 ~ version { in_section = 1; print; next }
+              /^Tags: / && $0 !~ version { in_section = 0 }
+              in_section && /^GitCommit: / { print "GitCommit: " commit; next }
+              { print }
+            ' library/fedora > library/fedora.tmp && mv library/fedora.tmp library/fedora
+          done
+          
+          echo "All versions processed. Showing final diff:"
+          # Check if there are changes to commit
+          if git diff --quiet library/fedora; then
+            echo "No changes detected in library/fedora. Exiting."
+            echo "NO_CHANGES=true" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
+          git add library/fedora
+          git commit -m "${{ steps.vars.outputs.COMMIT_MESSAGE }}"
+          git push -u origin ${{ steps.vars.outputs.BRANCH_NAME }}
+
+#      - name: Create Pull Request
+#        if: steps.commit.outputs.NO_CHANGES != 'true'
+#        env:
+#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#        run: |
+#          gh pr create \
+#            --title "${{ steps.vars.outputs.COMMIT_MESSAGE }}" \
+#            --body "This is an automated PR to update the Fedora Docker official image commit hashes." \
+#            --base master
