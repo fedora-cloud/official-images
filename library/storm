@@ -1,15 +1,13 @@
-Maintainers: Elisey Zanko <elisey.zanko@gmail.com> (@31z4)
-GitRepo: https://github.com/31z4/storm-docker.git
-Architectures: amd64
+Maintainers: The Apache Storm Project <dev@storm.apache.org> (@asfbot),
+             Julien Nioche (@jnioche),
+             Richard Zowalla (@rzo1)
+GitRepo: https://github.com/apache/storm-docker.git
+Architectures: amd64, arm64v8
 
-Tags: 1.1.3, 1.1
-GitCommit: 664a7f4730f58be00fd7fe0526d2c13180107c6f
-Directory: 1.1.3
+Tags: 2.8.0, 2.8, latest
+GitCommit: fefacef2f400d8f437675b11e08bc6098a91c188
+Directory: 2.8.0
 
-Tags: 1.2.3, 1.2
-GitCommit: 664a7f4730f58be00fd7fe0526d2c13180107c6f
-Directory: 1.2.3
-
-Tags: 2.2.0, 2.2, latest
-GitCommit: 9eae4ab08d30cfab29c784b4d9e7d1c187fa0348
-Directory: 2.2.0
+Tags: 2.8.0-jre17, 2.8-jre17
+GitCommit: fefacef2f400d8f437675b11e08bc6098a91c188
+Directory: 2.8.0

@@ -1,53 +1,25 @@
 
-Maintainers: Luigi Dell'Aquila <l.dellaquila@orientdb.com> (@luigidellaquila)
+Maintainers: Tglman <tglman@tglman.com> (@tglman), 
+             Luigi Dell'Aquila <l.dellaquila@orientdb.com> (@luigidellaquila)
 
-Tags: 3.2.2, 3.2, latest
+Tags: 3.2.40, 3.2, latest
+Architectures: amd64, arm32v7, arm64v8
 GitRepo: https://github.com/orientechnologies/orientdb-docker.git
-GitCommit: f64bde2c10f5179d35dfd42a68ee1065efc789a0
-Directory: release/3.2.x/3.2.2
+GitCommit: ca5536253f21e4c20ad57e3a09ec982990ceadb2
+Directory: release/3.2.x/3.2.40
 
-Tags: 3.2.2-tp3, 3.2-tp3
+Tags: 3.2.40-tp3, 3.2-tp3
+Architectures: amd64, arm32v7, arm64v8
 GitRepo: https://github.com/orientechnologies/orientdb-docker.git
-GitCommit: f64bde2c10f5179d35dfd42a68ee1065efc789a0
-Directory: release/3.2.x/3.2.2-tp3
+GitCommit: ca5536253f21e4c20ad57e3a09ec982990ceadb2
+Directory: release/3.2.x/3.2.40-tp3
 
-Tags: 3.1.14, 3.1
+Tags: 3.1.20, 3.1
 GitRepo: https://github.com/orientechnologies/orientdb-docker.git
-GitCommit: b9677c74005b566b86320034063d2b4fc50079fb
-Directory: release/3.1.x/3.1.14
+GitCommit: a8a42acbe19dad60a051afe08ed625e66587dd37 
+Directory: release/3.1.x/3.1.20
 
-Tags: 3.1.14-tp3, 3.1-tp3
+Tags: 3.1.20-tp3, 3.1-tp3
 GitRepo: https://github.com/orientechnologies/orientdb-docker.git
-GitCommit: b9677c74005b566b86320034063d2b4fc50079fb
-Directory: release/3.1.x/3.1.14-tp3
-
-Tags: 3.0.38, 3.0
-GitRepo: https://github.com/orientechnologies/orientdb-docker.git
-GitCommit: 0ea73f03c2811457b1e81724d96ca3ad2fb88870
-Directory: release/3.0.x/3.0.38
-
-Tags: 3.0.38-tp3, 3.0-tp3
-GitRepo: https://github.com/orientechnologies/orientdb-docker.git
-GitCommit: 0ea73f03c2811457b1e81724d96ca3ad2fb88870
-Directory: release/3.0.x/3.0.38-tp3
-
-Tags: 2.2.37, 2.2
-GitRepo: https://github.com/orientechnologies/orientdb-docker.git
-GitCommit: 0562973e21d0992bc799dcb7b64b1978b7e32ac3
-Directory: release/2.2.x/2.2.37
-
-Tags: 2.2.37-spatial
-GitRepo: https://github.com/orientechnologies/orientdb-docker.git
-GitCommit: 0562973e21d0992bc799dcb7b64b1978b7e32ac3
-Directory: release/2.2.x/2.2.37-spatial
-
-Tags: 2.1.25, 2.1
-GitRepo: https://github.com/orientechnologies/orientdb-docker.git
-GitCommit: 0562973e21d0992bc799dcb7b64b1978b7e32ac3
-Directory: release/2.1.x
-
-Tags: 2.0.18, 2.0
-GitRepo: https://github.com/orientechnologies/orientdb-docker.git
-GitCommit: 0562973e21d0992bc799dcb7b64b1978b7e32ac3
-Directory: release/2.0.x
-
+GitCommit: a8a42acbe19dad60a051afe08ed625e66587dd37  
+Directory: release/3.1.x/3.1.20-tp3

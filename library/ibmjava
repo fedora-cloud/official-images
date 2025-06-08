@@ -1,39 +1,21 @@
-# ibmjava official images
+#ibmjava official images
 
 Maintainers: Jayashree Gopi <jayasg12@in.ibm.com> (@jayasg12)
 GitRepo: https://github.com/ibmruntimes/ci.docker.git
+GitFetch: refs/heads/main
 
 Tags: 8-jre, jre, 8, latest
-Architectures: amd64, i386, ppc64le, s390x
-GitCommit: c14f45f7de370a12d59c2aacdd0e914bd0ff3c00
+Architectures: amd64, ppc64le, s390x
+GitCommit: 9f1804904c83b71533e810b7605ad93970cb3938
 Directory: ibmjava/8/jre/ubuntu
 
-Tags: 8-jre-alpine, jre-alpine
-Architectures: amd64
-GitCommit: c14f45f7de370a12d59c2aacdd0e914bd0ff3c00
-Directory: ibmjava/8/jre/alpine
-
 Tags: 8-sfj, sfj
-Architectures: amd64, i386, ppc64le, s390x
-GitCommit: c14f45f7de370a12d59c2aacdd0e914bd0ff3c00
+Architectures: amd64, ppc64le, s390x
+GitCommit: 9f1804904c83b71533e810b7605ad93970cb3938
 Directory: ibmjava/8/sfj/ubuntu
 
-Tags: 8-sfj-alpine, sfj-alpine
-Architectures: amd64
-GitCommit: c14f45f7de370a12d59c2aacdd0e914bd0ff3c00
-Directory: ibmjava/8/sfj/alpine
-
 Tags: 8-sdk, sdk
-Architectures: amd64, i386, ppc64le, s390x
-GitCommit: c14f45f7de370a12d59c2aacdd0e914bd0ff3c00
+Architectures: amd64, ppc64le, s390x
+GitCommit: 9f1804904c83b71533e810b7605ad93970cb3938
 Directory: ibmjava/8/sdk/ubuntu
 
-Tags: 8-sdk-alpine, sdk-alpine
-Architectures: amd64
-GitCommit: c14f45f7de370a12d59c2aacdd0e914bd0ff3c00
-Directory: ibmjava/8/sdk/alpine
-
-Tags: 11-jdk, 11
-Architectures: amd64, ppc64le, s390x
-GitCommit: c14f45f7de370a12d59c2aacdd0e914bd0ff3c00
-Directory: ibmjava/11/jdk/ubuntu

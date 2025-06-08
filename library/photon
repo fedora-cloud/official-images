@@ -1,27 +1,27 @@
-# this file is generated via https://github.com/vmware/photon-docker-image/blob/b018a869c90bb837e15bc97457d26eaedf9f9bed/generate-stackbrew-library.sh
-Maintainers: Fabio Rapposelli <fabio@vmware.com> (@frapposelli),
+# this file is generated via https://github.com/vmware/photon-docker-image/blob/c48f588cebc54dba10db21c75d4354a03fa6ebc2/generate-stackbrew-library.sh
+Maintainers: Michelle Wang <michellew@vmware.com> (@michellew),
              Alexey Makhalov <amakhalov@vmware.com> (@YustasSwamp)
 GitRepo: https://github.com/vmware/photon-docker-image.git
 Directory: docker
 
-Tags: 4.0, 4.0-20211029, latest
+
+Tags: 5.0, 5.0-20250427, latest
 Architectures: amd64, arm64v8
-GitFetch: refs/heads/x86_64/4.0-20211029
-GitCommit: b3dada92a8fdb528c34aafd953a65a0b13cad9f7
-arm64v8-GitFetch: refs/heads/aarch64/4.0-20211029
-arm64v8-GitCommit: 5e4195cdf35314c69d1177beada68d107d3168d9
+GitFetch: refs/heads/x86_64/5.0-20250427
+GitCommit: 41a2d9175642cf2da9f33b817c28aa2c01919d70
+arm64v8-GitFetch: refs/heads/aarch64/5.0-20250427
+arm64v8-GitCommit: 31c954d91dfb413703c4ed725200055b42f48d2b
 
-Tags: 3.0, 3.0-20211029
+Tags: 4.0, 4.0-20250518
 Architectures: amd64, arm64v8
-GitFetch: refs/heads/x86_64/3.0-20211029
-GitCommit: 9ecec586340fa0ce18b656261c5499dfb36d0067
-arm64v8-GitFetch: refs/heads/aarch64/3.0-20211029
-arm64v8-GitCommit: 4e1bad3063276ffc9973f8bf1c4e1cc5ceeee839
+GitFetch: refs/heads/x86_64/4.0-20250518
+GitCommit: 0b2ace4fa57bbd1d03b60915156c9d357bcbe698
+arm64v8-GitFetch: refs/heads/aarch64/4.0-20250518
+arm64v8-GitCommit: 6bf7985b185a9251837efb412a027bdf60afbd40
 
-Tags: 1.0, 1.0-20211029
-GitFetch: refs/heads/1.0-20211029
-GitCommit: f9bb54bcc539e618bfa014eb3ff66608949b937e
-
-Tags: 2.0, 2.0-20211029
-GitFetch: refs/heads/2.0-20211029
-GitCommit: f6aa33167acc4d1a151237fba2074df4fe09b137
+Tags: 3.0, 3.0-20250316
+Architectures: amd64, arm64v8
+GitFetch: refs/heads/x86_64/3.0-20250316
+GitCommit: f848d5df815c0afe76b42a608d49df0e87af51c2
+arm64v8-GitFetch: refs/heads/aarch64/3.0-20250316
+arm64v8-GitCommit: 93a0c62b9b7790fc27d1413f65073ef1a2894bab

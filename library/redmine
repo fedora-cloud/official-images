@@ -1,44 +1,35 @@
-# this file is generated via https://github.com/docker-library/redmine/blob/3a41d66499222d90f2f4207c7f6dafd38f4001c5/generate-stackbrew-library.sh
+# this file is generated via https://github.com/docker-library/redmine/blob/f18c3977c16a9c404017a5dc924720eedbf34c78/generate-stackbrew-library.sh
 
 Maintainers: Tianon Gravi <admwiggin@gmail.com> (@tianon),
              Joseph Ferguson <yosifkit@gmail.com> (@yosifkit)
 GitRepo: https://github.com/docker-library/redmine.git
 
-Tags: 4.2.3, 4.2, 4, latest
-Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, ppc64le, s390x
-GitCommit: 282e53760ea23d3415bb1e45d2a0d930f47575c3
-Directory: 4.2
+Tags: 6.0.5, 6.0, 6, latest, 6.0.5-bookworm, 6.0-bookworm, 6-bookworm, bookworm
+Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, mips64le, ppc64le, s390x
+GitCommit: 79fdb4829c95432ad05877fea0b27793b35bfd6f
+Directory: 6.0/bookworm
 
-Tags: 4.2.3-passenger, 4.2-passenger, 4-passenger, passenger
-GitCommit: 0c9295ba6a394c8d0fb8c27cdfd70033b1f9c3aa
-Directory: 4.2/passenger
+Tags: 6.0.5-alpine3.22, 6.0-alpine3.22, 6-alpine3.22, alpine3.22, 6.0.5-alpine, 6.0-alpine, 6-alpine, alpine
+Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, riscv64, s390x
+GitCommit: 1d4803b70876ee3a9a8e9dfb71c0c0293f5621d8
+Directory: 6.0/alpine3.22
 
-Tags: 4.2.3-alpine, 4.2-alpine, 4-alpine, alpine
-GitCommit: 282e53760ea23d3415bb1e45d2a0d930f47575c3
-Directory: 4.2/alpine
+Tags: 6.0.5-alpine3.21, 6.0-alpine3.21, 6-alpine3.21, alpine3.21
+Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, riscv64, s390x
+GitCommit: 79fdb4829c95432ad05877fea0b27793b35bfd6f
+Directory: 6.0/alpine3.21
 
-Tags: 4.1.5, 4.1
-Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, ppc64le, s390x
-GitCommit: 5c6ee97401c76351a5e228548717dfc4130f4179
-Directory: 4.1
+Tags: 5.1.8, 5.1, 5, 5.1.8-bookworm, 5.1-bookworm, 5-bookworm
+Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, mips64le, ppc64le, s390x
+GitCommit: a000f11a67e7e7f315398fb83a9262e47998b663
+Directory: 5.1/bookworm
 
-Tags: 4.1.5-passenger, 4.1-passenger
-GitCommit: 0c9295ba6a394c8d0fb8c27cdfd70033b1f9c3aa
-Directory: 4.1/passenger
+Tags: 5.1.8-alpine3.22, 5.1-alpine3.22, 5-alpine3.22, 5.1.8-alpine, 5.1-alpine, 5-alpine
+Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, riscv64, s390x
+GitCommit: 1d4803b70876ee3a9a8e9dfb71c0c0293f5621d8
+Directory: 5.1/alpine3.22
 
-Tags: 4.1.5-alpine, 4.1-alpine
-GitCommit: 5c6ee97401c76351a5e228548717dfc4130f4179
-Directory: 4.1/alpine
-
-Tags: 4.0.9, 4.0
-Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, ppc64le, s390x
-GitCommit: 02809f9dead7b26e490f84107c7a2170f11fd2b9
-Directory: 4.0
-
-Tags: 4.0.9-passenger, 4.0-passenger
-GitCommit: 0c9295ba6a394c8d0fb8c27cdfd70033b1f9c3aa
-Directory: 4.0/passenger
-
-Tags: 4.0.9-alpine, 4.0-alpine
-GitCommit: 02809f9dead7b26e490f84107c7a2170f11fd2b9
-Directory: 4.0/alpine
+Tags: 5.1.8-alpine3.21, 5.1-alpine3.21, 5-alpine3.21
+Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, riscv64, s390x
+GitCommit: a000f11a67e7e7f315398fb83a9262e47998b663
+Directory: 5.1/alpine3.21

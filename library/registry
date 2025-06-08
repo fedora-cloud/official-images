@@ -1,11 +1,8 @@
-Maintainers: David Wu (@davidswu),
-             Ryan Abrams (@caervs)
-GitRepo: https://github.com/docker/distribution-library-image.git
+Maintainers: Milos Gajdos (@milosgajdos),
+             Sebastiaan van Stijn (@thajeztah)
+GitRepo: https://github.com/distribution/distribution-library-image.git
+GitFetch: refs/heads/master
 
-Tags: 2.7.1, 2.7, 2, latest
-Architectures: amd64, arm64v8, arm32v6
-GitFetch: refs/heads/release/2.7
-GitCommit: ab00e8dae12d4515ed259015eab771ec92e92dd4
-amd64-Directory: amd64
-arm32v6-Directory: arm
-arm64v8-Directory: arm64
+Tags: 3.0.0, 3.0, 3, latest
+Architectures: amd64, arm64v8, arm32v6, arm32v7, ppc64le, s390x, riscv64
+GitCommit: f83883590f5afda69afafbc5aaa5fde3686f47cf

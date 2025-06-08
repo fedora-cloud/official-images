@@ -1,30 +1,27 @@
-# this file is generated via https://github.com/geonetwork/docker-geonetwork/blob/1e6c6fc27e51f71b11d97ceee52472bd7d7596bc/generate-stackbrew-library.sh
+# this file is generated via https://github.com/geonetwork/docker-geonetwork/blob/4bacba930373302a0b896e03409f4fa37fc75d9f/generate-stackbrew-library.sh
 
 Maintainers: Joana Simoes <jo@doublebyte.net> (@doublebyte1),
-     Juan Luis Rodriguez <juanluisrp@geocat.net> (@juanluisrp)
-GitRepo: https://github.com/geonetwork/docker-geonetwork
+     Juan Luis Rodriguez <juanluisrp@geocat.net> (@juanluisrp),
+ Jose Garcia <jose.garcia@geocat.net> (@josegar74)
+GitRepo: https://github.com/geonetwork/docker-geonetwork.git
+GitFetch: refs/heads/main
 
-Tags: 3.10.7, 3.10
+Tags: 3.12.12, 3.12, 3
+Architectures: amd64, arm32v7, arm64v8, ppc64le
+GitCommit: 17278beab34080c90454c0b7059bd6b49701f979
+Directory: 3.12.12
+
+Tags: 3.12.12-postgres, 3.12-postgres, 3-postgres
+Architectures: amd64, arm32v7, arm64v8, ppc64le
+GitCommit: 17278beab34080c90454c0b7059bd6b49701f979
+Directory: 3.12.12/postgres
+
+Tags: 4.2.13, 4.2
 Architectures: amd64, arm64v8
-GitCommit: 9bd2540fae06da21ef228502be396cb5da4b4c14
-Directory: 3.10.7
+GitCommit: ca0637409ff44e32b5138a3ef76a48533ba1d595
+Directory: 4.2.13
 
-Tags: 3.10.7-postgres, 3.10-postgres
+Tags: 4.4.8, 4.4, 4, latest
 Architectures: amd64, arm64v8
-GitCommit: 7e2a8d9ef56a982b9fbb5a9b51e16d83d0ec4c3c
-Directory: 3.10.7/postgres
-
-Tags: 3.12.1, 3.12, 3
-Architectures: amd64, arm64v8
-GitCommit: 9bd2540fae06da21ef228502be396cb5da4b4c14
-Directory: 3.12.1
-
-Tags: 3.12.1-postgres, 3.12-postgres, 3-postgres
-Architectures: amd64, arm64v8
-GitCommit: 1e6c6fc27e51f71b11d97ceee52472bd7d7596bc
-Directory: 3.12.1/postgres
-
-Tags: 4.0.5, 4.0, 4, latest
-Architectures: amd64
-GitCommit: 8e557004a50f04a2ac62a21009ce0ec745ed9b8d
-Directory: 4.0.5
+GitCommit: ca0637409ff44e32b5138a3ef76a48533ba1d595
+Directory: 4.4.8

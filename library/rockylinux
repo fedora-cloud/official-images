@@ -1,0 +1,41 @@
+Maintainers: The Rocky Linux Foundation <infrastructure@rockylinux.org> (@rocky-linux),
+             Neil Hanlon <neil@resf.org> (@neilhanlon)
+GitRepo: https://github.com/rocky-linux/sig-cloud-instance-images.git
+
+Tags: 9.3.20231119, 9.3, 9
+GitFetch: refs/heads/Rocky-9.3.20231119-Base-x86_64
+GitCommit: 53416a9aaea6ac6ded18c2047d51e26983160faf
+arm64v8-GitFetch: refs/heads/Rocky-9.3.20231119-Base-aarch64
+arm64v8-GitCommit: 29d1766aa469897f6690547364d45d352cbe7ae6
+s390x-GitFetch: refs/heads/Rocky-9.3.20231119-Base-s390x
+s390x-GitCommit: 7581889c773c12e32ee0e46e627a7c66f20463bd
+ppc64le-GitFetch: refs/heads/Rocky-9.3.20231119-Base-ppc64le
+ppc64le-GitCommit: 20d0ef4cd07c7b5b368b846f1f154db280ea8e4c
+Architectures: amd64, arm64v8, ppc64le, s390x
+
+Tags: 9.3.20231119-minimal, 9.3-minimal, 9-minimal
+GitFetch: refs/heads/Rocky-9.3.20231119-Minimal-x86_64
+GitCommit: e784104b999a1ff6b66cb0aeee0408fb030c840b
+arm64v8-GitFetch: refs/heads/Rocky-9.3.20231119-Minimal-aarch64
+arm64v8-GitCommit: 0b10d7d7a8ba867de715441b52c591880480bc94
+s390x-GitFetch: refs/heads/Rocky-9.3.20231119-Minimal-s390x
+s390x-GitCommit: af021ed5bf828c0abd26761a8df31b6d578c9498
+ppc64le-GitFetch: refs/heads/Rocky-9.3.20231119-Minimal-ppc64le
+ppc64le-GitCommit: 13770ec44b35cbe9af2296d0d50edc31a343e4f6
+Architectures: amd64, arm64v8, ppc64le, s390x
+
+
+Tags: 8.9.20231119, 8.9, 8
+GitFetch: refs/heads/Rocky-8.9.20231119-Base-x86_64
+GitCommit: 2085c6419637bf970a532888141569c5865ae61f
+arm64v8-GitFetch: refs/heads/Rocky-8.9.20231119-Base-aarch64
+arm64v8-GitCommit: 94d578e7e1eeaf0591657eff018929928e0bfdfc
+s390x-GitFetch: refs/heads/Rocky-8.9.20231119-Base-s390x
+Architectures: amd64, arm64v8
+
+Tags: 8.9.20231119-minimal, 8.9-minimal, 8-minimal
+GitFetch: refs/heads/Rocky-8.9.20231119-Minimal-x86_64
+GitCommit: 6d81e6b46e052158df83357c569c8a6773a81e78
+arm64v8-GitFetch: refs/heads/Rocky-8.9.20231119-Minimal-aarch64
+arm64v8-GitCommit: cc181de9168465f9e9e2fbddd5a0f8e1a89cddfc
+Architectures: amd64, arm64v8

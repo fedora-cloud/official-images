@@ -1,33 +1,41 @@
-Maintainers: Emile Vauge <emile@vauge.com> (@emilevauge), Ludovic Fernandez <ludovic@traefik.io> (@ldez), Julien Salleyron <julien@traefik.io> (@juliens), Romain Tribotté <romain.tribotte@traefik.io> (@rtribotte), Michael Matur <michael@traefik.io> (@mmatur), Kevin Pollet <kevin.pollet@traefik.io> (@kevinpollet)
+Maintainers: Julien Salleyron <julien@traefik.io> (@juliens), Romain Tribotté <romain.tribotte@traefik.io> (@rtribotte), Michael Matur <michael@traefik.io> (@mmatur), Kevin Pollet <kevin.pollet@traefik.io> (@kevinpollet), Tom Moulard <tom.moulard@traefik.io> (@tommoulard)
 
-Tags: v2.5.3-windowsservercore-1809, 2.5.3-windowsservercore-1809, v2.5-windowsservercore-1809, 2.5-windowsservercore-1809, brie-windowsservercore-1809, windowsservercore-1809
+Tags: v3.4.1-windowsservercore-ltsc2022, 3.4.1-windowsservercore-ltsc2022, v3.4-windowsservercore-ltsc2022, 3.4-windowsservercore-ltsc2022, v3-windowsservercore-ltsc2022, 3-windowsservercore-ltsc2022, chaource-windowsservercore-ltsc2022, windowsservercore-ltsc2022
 Architectures: windows-amd64
 GitRepo: https://github.com/traefik/traefik-library-image.git
-GitCommit: 39417f848e63ab9178c9c197fbc9c35f822446be
-Directory: windows/1809
-Constraints: windowsservercore-1809
+GitCommit: 19c7156de69c027a199d78d77efc7285d9cca13e
+Directory: v3.4/windows/servercore-ltsc2022
+Constraints: windowsservercore-ltsc2022
 
-Tags: v2.5.3, 2.5.3, v2.5, 2.5, brie, latest
-Architectures: amd64, arm32v6, arm64v8
-GitRepo: https://github.com/traefik/traefik-library-image.git
-GitCommit: 39417f848e63ab9178c9c197fbc9c35f822446be
-Directory: alpine
-
-Tags: v1.7.33-windowsservercore-1809, 1.7.33-windowsservercore-1809, v1.7-windowsservercore-1809, 1.7-windowsservercore-1809, maroilles-windowsservercore-1809
+Tags: v3.4.1-nanoserver-ltsc2022, 3.4.1-nanoserver-ltsc2022, v3.4-nanoserver-ltsc2022, 3.4-nanoserver-ltsc2022, v3-nanoserver-ltsc2022, 3-nanoserver-ltsc2022, chaource-nanoserver-ltsc2022, nanoserver-ltsc2022
 Architectures: windows-amd64
 GitRepo: https://github.com/traefik/traefik-library-image.git
-GitCommit: 87f6cff7d81f0a10c093b0c8f73a3547f1cc33df
-Directory: windows/1809
-Constraints: windowsservercore-1809
+GitCommit: 19c7156de69c027a199d78d77efc7285d9cca13e
+Directory: v3.4/windows/nanoserver-ltsc2022
+Constraints: nanoserver-ltsc2022, windowsservercore-ltsc2022
 
-Tags: v1.7.33-alpine, 1.7.33-alpine, v1.7-alpine, 1.7-alpine, maroilles-alpine
-Architectures: amd64, arm32v6, arm64v8
+Tags: v3.4.1, 3.4.1, v3.4, 3.4, v3, 3, chaource, latest
+Architectures: amd64, arm32v6, arm64v8, ppc64le, riscv64, s390x
 GitRepo: https://github.com/traefik/traefik-library-image.git
-GitCommit: 87f6cff7d81f0a10c093b0c8f73a3547f1cc33df
-Directory: alpine
+GitCommit: 19c7156de69c027a199d78d77efc7285d9cca13e
+Directory: v3.4/alpine
 
-Tags: v1.7.33, 1.7.33, v1.7, 1.7, maroilles
-Architectures: amd64, arm32v6, arm64v8
+Tags: v2.11.25-windowsservercore-ltsc2022, 2.11.25-windowsservercore-ltsc2022, v2.11-windowsservercore-ltsc2022, 2.11-windowsservercore-ltsc2022, v2-windowsservercore-ltsc2022, 2-windowsservercore-ltsc2022, mimolette-windowsservercore-ltsc2022
+Architectures: windows-amd64
 GitRepo: https://github.com/traefik/traefik-library-image.git
-GitCommit: 87f6cff7d81f0a10c093b0c8f73a3547f1cc33df
-Directory: scratch
+GitCommit: 8deaff57a2d889d1198c81e081cb0fdb6819c12a
+Directory: v2.11/windows/servercore-ltsc2022
+Constraints: windowsservercore-ltsc2022
+
+Tags: v2.11.25-nanoserver-ltsc2022, 2.11.25-nanoserver-ltsc2022, v2.11-nanoserver-ltsc2022, 2.11-nanoserver-ltsc2022, v2-nanoserver-ltsc2022, 2-nanoserver-ltsc2022, mimolette-nanoserver-ltsc2022
+Architectures: windows-amd64
+GitRepo: https://github.com/traefik/traefik-library-image.git
+GitCommit: 8deaff57a2d889d1198c81e081cb0fdb6819c12a
+Directory: v2.11/windows/nanoserver-ltsc2022
+Constraints: nanoserver-ltsc2022, windowsservercore-ltsc2022
+
+Tags: v2.11.25, 2.11.25, v2.11, 2.11, v2, 2, mimolette
+Architectures: amd64, arm32v6, arm64v8, ppc64le, riscv64, s390x
+GitRepo: https://github.com/traefik/traefik-library-image.git
+GitCommit: 8deaff57a2d889d1198c81e081cb0fdb6819c12a
+Directory: v2.11/alpine

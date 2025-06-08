@@ -3,15 +3,15 @@ GitRepo: https://github.com/eggheads/eggdrop-docker.git
 
 Tags: develop
 Architectures: arm32v6, arm64v8, amd64
-GitCommit: 8d3bb9a0a2f35b45d50b82e9c7dd7a5af66e4c9a
+GitCommit: 037d27fee1499a17a1062efcba0213801d82c405
 Directory: develop
 
-Tags: 1.8, 1.8.4
-Architectures: amd64
-GitCommit: 14411e45f599536a86d9f023c0fa09f3dd2f5454
-Directory: 1.8
-
-Tags: 1.9, 1.9.1, stable, latest
+Tags: 1.9, 1.9.5
 Architectures: amd64, arm32v6, arm64v8
-GitCommit: eb6827278e290bc9ae5d443adfac3ca153d1c459
+GitCommit: 57fb1652a1880665b12e9f51775f173ecde24285
 Directory: 1.9
+
+Tags: 1.10, 1.10.0, stable, latest
+Architectures: amd64, arm32v6, arm64v8
+GitCommit: 2861815d67478e41667b8ed2cf9d3f13a5e755c1
+Directory: 1.10

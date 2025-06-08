@@ -1,18 +1,18 @@
-# This file is generated via https://github.com/matomo-org/docker/blob/2252146c6a2edbaf5028ed148e57e073d722afb4/generate-stackbrew-library.sh
-Maintainers: Pierre Ozoux <pierre@piwik.org> (@pierreozoux)
+# This file is generated via https://github.com/matomo-org/docker/blob/46d5da6d8958f77248588fe70242627d721dd0bb/generate-stackbrew-library.sh
+Maintainers: Matomo Community (@matomo-org)
 GitRepo: https://github.com/matomo-org/docker.git
 
-Tags: 4.5.0-apache, 4.5-apache, 4-apache, apache, 4.5.0, 4.5, 4, latest
+Tags: 5.3.2-apache, 5.3-apache, 5-apache, apache, 5.3.2, 5.3, 5, latest
 Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, mips64le, ppc64le, s390x
-GitCommit: 1a88fc70865c6f058e4672e9a34188d592c41a5c
+GitCommit: 82fa89f13413cae2cc185416dce5ce4a6baeb618
 Directory: apache
 
-Tags: 4.5.0-fpm, 4.5-fpm, 4-fpm, fpm
+Tags: 5.3.2-fpm, 5.3-fpm, 5-fpm, fpm
 Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, mips64le, ppc64le, s390x
-GitCommit: 1a88fc70865c6f058e4672e9a34188d592c41a5c
+GitCommit: 82fa89f13413cae2cc185416dce5ce4a6baeb618
 Directory: fpm
 
-Tags: 4.5.0-fpm-alpine, 4.5-fpm-alpine, 4-fpm-alpine, fpm-alpine
-Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, s390x
-GitCommit: 1a88fc70865c6f058e4672e9a34188d592c41a5c
+Tags: 5.3.2-fpm-alpine, 5.3-fpm-alpine, 5-fpm-alpine, fpm-alpine
+Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, riscv64, s390x
+GitCommit: 82fa89f13413cae2cc185416dce5ce4a6baeb618
 Directory: fpm-alpine

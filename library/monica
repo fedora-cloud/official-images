@@ -1,18 +1,34 @@
-# This file is generated via https://github.com/monicahq/docker/blob/37898d3e64f3bf26ae190673e65cfbd0ae4d9546/generate-stackbrew-library.sh
+# This file is generated via https://github.com/monicahq/docker/blob/8c3bcc8d3ab01315ca762c995338083d71c5611e/generate-stackbrew-library.sh
 Maintainers: Alexis Saettler <alexis@saettler.org> (@asbiin)
 GitRepo: https://github.com/monicahq/docker.git
+GitFetch: refs/heads/main
 
-Tags: 3.4.0-apache, 3.4-apache, 3-apache, apache, 3.4.0, 3.4, 3, latest
+Tags: 4.1.2-apache, 4.1-apache, 4-apache, apache, 4.1.2, 4.1, 4, latest
 Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, mips64le, ppc64le, s390x
-Directory: apache
-GitCommit: 62974d66881d7ba2b7172ea1d82b88485f65c579
+Directory: 4/apache
+GitCommit: 8c3bcc8d3ab01315ca762c995338083d71c5611e
 
-Tags: 3.4.0-fpm, 3.4-fpm, 3-fpm, fpm
+Tags: 4.1.2-fpm-alpine, 4.1-fpm-alpine, 4-fpm-alpine, fpm-alpine
+Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, riscv64, s390x
+Directory: 4/fpm-alpine
+GitCommit: 8c3bcc8d3ab01315ca762c995338083d71c5611e
+
+Tags: 4.1.2-fpm, 4.1-fpm, 4-fpm, fpm
 Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, mips64le, ppc64le, s390x
-Directory: fpm
-GitCommit: 62974d66881d7ba2b7172ea1d82b88485f65c579
+Directory: 4/fpm
+GitCommit: 8c3bcc8d3ab01315ca762c995338083d71c5611e
 
-Tags: 3.4.0-fpm-alpine, 3.4-fpm-alpine, 3-fpm-alpine, fpm-alpine
-Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, s390x
-Directory: fpm-alpine
-GitCommit: 62974d66881d7ba2b7172ea1d82b88485f65c579
+Tags: 5.0.0-beta.5-apache, 5.0.0-beta-apache, 5.0-apache
+Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, mips64le, ppc64le, s390x
+Directory: 5/apache
+GitCommit: 8c3bcc8d3ab01315ca762c995338083d71c5611e
+
+Tags: 5.0.0-beta.5-fpm-alpine, 5.0.0-beta-fpm-alpine, 5.0-fpm-alpine
+Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, riscv64, s390x
+Directory: 5/fpm-alpine
+GitCommit: 8c3bcc8d3ab01315ca762c995338083d71c5611e
+
+Tags: 5.0.0-beta.5-fpm, 5.0.0-beta-fpm, 5.0-fpm
+Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, mips64le, ppc64le, s390x
+Directory: 5/fpm
+GitCommit: 8c3bcc8d3ab01315ca762c995338083d71c5611e

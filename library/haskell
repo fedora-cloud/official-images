@@ -1,11 +1,43 @@
-Maintainers: Alistair Burrowes <afburrowes@gmail.com> (@AlistairB),
-             Herbert Valerio Riedel <hvr@gnu.org> (@hvr)
+Maintainers: Albert Krewinkel <albert+docker@tarleb.com> (@tarleb),
+             Andrei Dziahel <develop7@develop7.info> (@develop7)
 GitRepo: https://github.com/haskell/docker-haskell
 
-Tags: 9.0.1-buster, 9.0-buster, 9-buster, buster, 9.0.1, 9.0, 9, latest
-GitCommit: f08ade43f48981b87505fbecca852194954fa61b
-Directory: 9.0/buster
+Tags: 9.12.2-bookworm, 9.12-bookworm, 9-bookworm, bookworm, 9.12.2, 9.12, 9, latest
+Architectures: amd64, arm64v8
+GitCommit: 9f6ddaa037edbbf26bf162c0285264aa3ffda638
+Directory: 9.12/bookworm
 
-Tags: 8.10.7-buster, 8.10-buster, 8-buster, 8.10.7, 8.10, 8
-GitCommit: f08ade43f48981b87505fbecca852194954fa61b
-Directory: 8.10/buster
+Tags: 9.12.2-slim-bookworm, 9.12-slim-bookworm, 9-slim-bookworm, slim-bookworm, 9-slim, slim
+Architectures: amd64, arm64v8
+GitCommit: 9f6ddaa037edbbf26bf162c0285264aa3ffda638
+Directory: 9.12/slim-bookworm
+
+Tags: 9.10.1-bullseye, 9.10-bullseye, 9-bullseye, bullseye, 9.10.1, 9.10
+Architectures: amd64, arm64v8
+GitCommit: 9f6ddaa037edbbf26bf162c0285264aa3ffda638
+Directory: 9.10/bullseye
+
+Tags: 9.10.1-slim-bullseye, 9.10-slim-bullseye, 9-slim-bullseye, slim-bullseye
+Architectures: amd64, arm64v8
+GitCommit: 9f6ddaa037edbbf26bf162c0285264aa3ffda638
+Directory: 9.10/slim-bullseye
+
+Tags: 9.8.4-bullseye, 9.8-bullseye, 9.8.4, 9.8
+Architectures: amd64, arm64v8
+GitCommit: 9f6ddaa037edbbf26bf162c0285264aa3ffda638
+Directory: 9.8/bullseye
+
+Tags: 9.8.4-slim-bullseye, 9.8-slim-bullseye, 9.8.4-slim, 9.8-slim
+Architectures: amd64, arm64v8
+GitCommit: 9f6ddaa037edbbf26bf162c0285264aa3ffda638
+Directory: 9.8/slim-bullseye
+
+Tags: 9.6.7-bullseye, 9.6-bullseye, 9.6.7, 9.6
+Architectures: amd64, arm64v8
+GitCommit: 9f6ddaa037edbbf26bf162c0285264aa3ffda638
+Directory: 9.6/bullseye
+
+Tags: 9.6.7-slim-bullseye, 9.6-slim-bullseye, 9.6.7-slim, 9.6-slim
+Architectures: amd64, arm64v8
+GitCommit: 9f6ddaa037edbbf26bf162c0285264aa3ffda638
+Directory: 9.6/slim-bullseye
