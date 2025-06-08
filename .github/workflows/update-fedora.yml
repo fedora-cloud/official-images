@@ -43,26 +43,17 @@ jobs:
       - name: Create instructions for Goose
         run: |
           cat <<EOF > instructions.txt
-          1. Pull main Branch and create a new Branch
-          2. Start by checking out to the master branch and pull the latest content
-          3. Then create a new branch name fedora_update_yyyymmdd, where yyyymmdd is the current date
-          4. Read the library/fedora file and get the GitRepo value
-          5. For each branch in that GitRepo, using curl to query GitHub API get the latest commit hash
-          6. Update the library/fedora file, if you find a branch that is not yet in that file, create a new Tag for it.
+          - Pull main Branch and create a new Branch
+          - Start by checking out to the master branch and pull the latest content
+          - Then create a new branch name fedora_update_yyyymmdd, where yyyymmdd is the current date
+          - Read the library/fedora file and get the GitRepo value
+          - For each branch in that GitRepo, using curl to query GitHub API get the latest commit hash
+          - Update the library/fedora file, if you find a branch that is not yet in that file, create a new Tag for it.
           EOF
 
       - name: Run Goose to update fedora file
         run: |
-          goose run --instructions instructions.txt | \
-                  # Remove ANSI color codes
-                  sed -E 's/\x1B\[[0-9;]*[mK]//g' | \
-                  # Remove session/logging lines
-                  grep -v "logging to /home/runner/.config/goose/sessions/" | \
-                  grep -v "^starting session" | \
-                  grep -v "^Closing session" | \
-                  # Trim trailing whitespace
-                  sed 's/[[:space:]]*$//' \
-                  > pr_comment.txt
+          goose run --instructions instructions.txt
       
       - name: Create Branch and Commit Changes
         id: commit
