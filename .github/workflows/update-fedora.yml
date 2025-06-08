@@ -8,6 +8,9 @@ permissions:
   contents: write
   pull-requests: write
 
+env:
+  PROVIDER_API_KEY:  ${{ secrets.OPENROUTER_API_KEY }}
+
 jobs:
   update-fedora:
     runs-on: ubuntu-latest
@@ -29,8 +32,6 @@ jobs:
           echo "/home/runner/.local/bin" >> $GITHUB_PATH
 
       - name: Configure Goose
-        env:
-          GOOSE_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         run: |
           mkdir -p ~/.config/goose
           cat <<EOF > ~/.config/goose/config.yaml
@@ -51,8 +52,6 @@ jobs:
           EOF
 
       - name: Run Goose to update fedora file
-        env:
-          GOOSE_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         run: |
           goose run --instructions instructions.txt | \
                   # Remove ANSI color codes
