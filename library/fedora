@@ -4,7 +4,7 @@ GitRepo: https://github.com/fedora-cloud/docker-brew-fedora.git
 Tags: 41
 Architectures: amd64, arm64v8, ppc64le, s390x
 GitFetch: refs/heads/41
-GitCommit: f52fdfbecea2b7787548d7bdc28d264ed03c000d
+GitCommit: c93d7282b13474fa4f3e9923102dbd149f849e75
 amd64-Directory: x86_64/
 arm64v8-Directory: aarch64/
 s390x-Directory: s390x/
@@ -13,7 +13,7 @@ ppc64le-Directory: ppc64le/
 Tags: 42, latest
 Architectures: amd64, arm64v8, ppc64le, s390x
 GitFetch: refs/heads/42
-GitCommit: c774b2277863035ea29f1224fc9b8e52935dc8a7
+GitCommit: 8a5987abae4d3e4ab03f69ecb3e28f9833dd5589
 amd64-Directory: x86_64/
 arm64v8-Directory: aarch64/
 s390x-Directory: s390x/
@@ -22,7 +22,16 @@ ppc64le-Directory: ppc64le/
 Tags: 43, rawhide
 Architectures: amd64, arm64v8, ppc64le, s390x
 GitFetch: refs/heads/43
-GitCommit: 7201349072eb32839418bdb10e846c3a91ff9270
+GitCommit: b4e3bc2d38f9c53540e5c9066968b39abe2d027b
+amd64-Directory: x86_64/
+arm64v8-Directory: aarch64/
+s390x-Directory: s390x/
+ppc64le-Directory: ppc64le/
+
+Tags: master
+Architectures: amd64, arm64v8, ppc64le, s390x
+GitFetch: refs/heads/master
+GitCommit: 891c3235f399d7d64b9bfd3a84bc37b80ebd4c79
 amd64-Directory: x86_64/
 arm64v8-Directory: aarch64/
 s390x-Directory: s390x/
