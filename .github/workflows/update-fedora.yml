@@ -48,7 +48,7 @@ jobs:
           - Then create a new branch name fedora_update_yyyymmdd, where yyyymmdd is the current date
           - Read the library/fedora file and get the GitRepo value
           - For each branch in that GitRepo, using curl to query GitHub API get the latest commit hash
-          - Update the library/fedora file, if you find a branch that is not yet in that file, create a new Tag for it.
+          - Update the library/fedora file, if you find a branch (except for the master branch) that is not yet in that file, create a new Tag for it.
           EOF
 
       - name: Run Goose to update fedora file
