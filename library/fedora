@@ -4,7 +4,7 @@ GitRepo: https://github.com/fedora-cloud/docker-brew-fedora.git
 Tags: 41
 Architectures: amd64, arm64v8, ppc64le, s390x
 GitFetch: refs/heads/41
-GitCommit: f52fdfbecea2b7787548d7bdc28d264ed03c000d
+GitCommit: 61999984d0e9edfc6f3e3b76aed67546b1967e5f
 amd64-Directory: x86_64/
 arm64v8-Directory: aarch64/
 s390x-Directory: s390x/
@@ -13,7 +13,7 @@ ppc64le-Directory: ppc64le/
 Tags: 42, latest
 Architectures: amd64, arm64v8, ppc64le, s390x
 GitFetch: refs/heads/42
-GitCommit: c774b2277863035ea29f1224fc9b8e52935dc8a7
+GitCommit: 13408df9e552f4506b98a76e5c0474a9eb7fb7b4
 amd64-Directory: x86_64/
 arm64v8-Directory: aarch64/
 s390x-Directory: s390x/
@@ -22,7 +22,7 @@ ppc64le-Directory: ppc64le/
 Tags: 43, rawhide
 Architectures: amd64, arm64v8, ppc64le, s390x
 GitFetch: refs/heads/43
-GitCommit: 7201349072eb32839418bdb10e846c3a91ff9270
+GitCommit: 00336c5bc413ac6e4bb3573fc7b3c0dc83cb58b7
 amd64-Directory: x86_64/
 arm64v8-Directory: aarch64/
 s390x-Directory: s390x/
