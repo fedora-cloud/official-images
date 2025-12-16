@@ -2,22 +2,15 @@ Maintainers: Masahiro Nakagawa <repeatedly@gmail.com> (@repeatedly),
              Fluentd developers <fluentd@googlegroups.com> (@fluent/admins)
 GitRepo: https://github.com/fluent/fluentd-docker-image.git
 
-# Alpine images
-Tags: v1.16.9-1.0, v1.16-1
-Architectures: amd64, arm32v6, arm64v8, i386, ppc64le, s390x
-GitFetch: refs/heads/v1.16
-GitCommit: 505a1af75b4a4adb40d576df7b18cebab853264e
-Directory: v1.16/alpine
-
 # Debian images
-Tags: v1.16.9-debian-1.0, v1.16-debian-1
+Tags: v1.16.10-debian-1.0, v1.16-debian-1
 Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, ppc64le, s390x
 GitFetch: refs/heads/v1.16
-GitCommit: 505a1af75b4a4adb40d576df7b18cebab853264e
+GitCommit: e63e0aa7b96fafc49b55e72476503e02fc8144f8
 Directory: v1.16/debian
 
 # Debian images
-Tags: v1.19.0-debian-1.0, v1.19-debian-1, v1.19.0-1.0, v1.19-1, latest
+Tags: v1.19.1-debian-1.0, v1.19-debian-1, v1.19.0-1.0, v1.19-1, latest
 Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, ppc64le, s390x
-GitCommit: 42a0afa30b3821482bce1ba8e67266d745619724
+GitCommit: 1e7ff373975402c1e5b10e9b2ae41e50b3d273a3
 Directory: v1.19/debian
