@@ -1,126 +1,96 @@
-# this file is generated via https://github.com/nodejs/docker-node/blob/ebca93391dd63c3702fdcddaaff390d2e55a6ef2/stackbrew.js
+# this file is generated via https://github.com/nodejs/docker-node/blob/01834039f8adb72f3bba8f23026083d786aaea4a/stackbrew.js
 
 Maintainers: The Node.js Docker Team <https://github.com/nodejs/docker-node> (@nodejs)
 GitRepo: https://github.com/nodejs/docker-node.git
 GitFetch: refs/heads/main
 
-Tags: 26-alpine3.23, 26.7-alpine3.23, 26.7.0-alpine3.23, alpine3.23, current-alpine3.23
+Tags: 26-alpine3.23, 26.13-alpine3.23, 26.13.0-alpine3.23, alpine3.23, current-alpine3.23, lithium-alpine3.23, lts-alpine3.23
 Architectures: amd64, arm64v8
-GitCommit: 6f0689e044949377103a6c7fe56ede924838f9b0
+GitCommit: 34e1b0030b415bdea959ccb15afda976a0761346
 Directory: 26/alpine3.23
 
-Tags: 26-alpine, 26-alpine3.24, 26.7-alpine, 26.7-alpine3.24, 26.7.0-alpine, 26.7.0-alpine3.24, alpine, alpine3.24, current-alpine, current-alpine3.24
+Tags: 26-alpine, 26-alpine3.24, 26.13-alpine, 26.13-alpine3.24, 26.13.0-alpine, 26.13.0-alpine3.24, alpine, alpine3.24, current-alpine, current-alpine3.24, lithium-alpine, lithium-alpine3.24, lts-alpine, lts-alpine3.24
 Architectures: amd64, arm64v8
-GitCommit: 6f0689e044949377103a6c7fe56ede924838f9b0
+GitCommit: 34e1b0030b415bdea959ccb15afda976a0761346
 Directory: 26/alpine3.24
 
-Tags: 26-bookworm, 26.7-bookworm, 26.7.0-bookworm, bookworm, current-bookworm
+Tags: 26-bookworm, 26.13-bookworm, 26.13.0-bookworm, bookworm, current-bookworm, lithium-bookworm, lts-bookworm
 Architectures: amd64, arm64v8, ppc64le
-GitCommit: 6f0689e044949377103a6c7fe56ede924838f9b0
+GitCommit: 34e1b0030b415bdea959ccb15afda976a0761346
 Directory: 26/bookworm
 
-Tags: 26-bookworm-slim, 26.7-bookworm-slim, 26.7.0-bookworm-slim, bookworm-slim, current-bookworm-slim
+Tags: 26-bookworm-slim, 26.13-bookworm-slim, 26.13.0-bookworm-slim, bookworm-slim, current-bookworm-slim, lithium-bookworm-slim, lts-bookworm-slim
 Architectures: amd64, arm64v8, ppc64le
-GitCommit: 6f0689e044949377103a6c7fe56ede924838f9b0
+GitCommit: 34e1b0030b415bdea959ccb15afda976a0761346
 Directory: 26/bookworm-slim
 
-Tags: 26-bullseye, 26.7-bullseye, 26.7.0-bullseye, bullseye, current-bullseye
-Architectures: amd64, arm64v8
-GitCommit: 6f0689e044949377103a6c7fe56ede924838f9b0
-Directory: 26/bullseye
-
-Tags: 26-bullseye-slim, 26.7-bullseye-slim, 26.7.0-bullseye-slim, bullseye-slim, current-bullseye-slim
-Architectures: amd64, arm64v8
-GitCommit: 6f0689e044949377103a6c7fe56ede924838f9b0
-Directory: 26/bullseye-slim
-
-Tags: 26, 26-trixie, 26.7, 26.7-trixie, 26.7.0, 26.7.0-trixie, current, current-trixie, latest, trixie
+Tags: 26, 26-trixie, 26.13, 26.13-trixie, 26.13.0, 26.13.0-trixie, current, current-trixie, latest, lithium, lithium-trixie, lts, lts-lithium, lts-trixie, trixie
 Architectures: amd64, arm64v8, ppc64le, s390x
-GitCommit: 6f0689e044949377103a6c7fe56ede924838f9b0
+GitCommit: 34e1b0030b415bdea959ccb15afda976a0761346
 Directory: 26/trixie
 
-Tags: 26-slim, 26-trixie-slim, 26.7-slim, 26.7-trixie-slim, 26.7.0-slim, 26.7.0-trixie-slim, current-slim, current-trixie-slim, slim, trixie-slim
+Tags: 26-slim, 26-trixie-slim, 26.13-slim, 26.13-trixie-slim, 26.13.0-slim, 26.13.0-trixie-slim, current-slim, current-trixie-slim, lithium-slim, lithium-trixie-slim, lts-slim, lts-trixie-slim, slim, trixie-slim
 Architectures: amd64, arm64v8, ppc64le, s390x
-GitCommit: 6f0689e044949377103a6c7fe56ede924838f9b0
+GitCommit: 34e1b0030b415bdea959ccb15afda976a0761346
 Directory: 26/trixie-slim
 
-Tags: 24-alpine3.23, 24.19-alpine3.23, 24.19.0-alpine3.23, krypton-alpine3.23, lts-alpine3.23
+Tags: 24-alpine3.23, 24.22-alpine3.23, 24.22.2-alpine3.23, krypton-alpine3.23
 Architectures: amd64, arm64v8, s390x
-GitCommit: fd1bf45c51970427bc899084b5381f6827722246
+GitCommit: e994dfe115899a82684caa7533380aa7d439aae1
 Directory: 24/alpine3.23
 
-Tags: 24-alpine, 24-alpine3.24, 24.19-alpine, 24.19-alpine3.24, 24.19.0-alpine, 24.19.0-alpine3.24, krypton-alpine, krypton-alpine3.24, lts-alpine, lts-alpine3.24
+Tags: 24-alpine, 24-alpine3.24, 24.22-alpine, 24.22-alpine3.24, 24.22.2-alpine, 24.22.2-alpine3.24, krypton-alpine, krypton-alpine3.24
 Architectures: amd64, arm64v8, s390x
-GitCommit: fd1bf45c51970427bc899084b5381f6827722246
+GitCommit: e994dfe115899a82684caa7533380aa7d439aae1
 Directory: 24/alpine3.24
 
-Tags: 24, 24-bookworm, 24.19, 24.19-bookworm, 24.19.0, 24.19.0-bookworm, krypton, krypton-bookworm, lts, lts-bookworm, lts-krypton
+Tags: 24, 24-bookworm, 24.22, 24.22-bookworm, 24.22.2, 24.22.2-bookworm, krypton, krypton-bookworm
 Architectures: amd64, arm64v8, ppc64le
-GitCommit: fd1bf45c51970427bc899084b5381f6827722246
+GitCommit: e994dfe115899a82684caa7533380aa7d439aae1
 Directory: 24/bookworm
 
-Tags: 24-bookworm-slim, 24-slim, 24.19-bookworm-slim, 24.19-slim, 24.19.0-bookworm-slim, 24.19.0-slim, krypton-bookworm-slim, krypton-slim, lts-bookworm-slim, lts-slim
+Tags: 24-bookworm-slim, 24-slim, 24.22-bookworm-slim, 24.22-slim, 24.22.2-bookworm-slim, 24.22.2-slim, krypton-bookworm-slim, krypton-slim
 Architectures: amd64, arm64v8, ppc64le
-GitCommit: fd1bf45c51970427bc899084b5381f6827722246
+GitCommit: e994dfe115899a82684caa7533380aa7d439aae1
 Directory: 24/bookworm-slim
 
-Tags: 24-bullseye, 24.19-bullseye, 24.19.0-bullseye, krypton-bullseye, lts-bullseye
-Architectures: amd64, arm64v8
-GitCommit: fd1bf45c51970427bc899084b5381f6827722246
-Directory: 24/bullseye
-
-Tags: 24-bullseye-slim, 24.19-bullseye-slim, 24.19.0-bullseye-slim, krypton-bullseye-slim, lts-bullseye-slim
-Architectures: amd64, arm64v8
-GitCommit: fd1bf45c51970427bc899084b5381f6827722246
-Directory: 24/bullseye-slim
-
-Tags: 24-trixie, 24.19-trixie, 24.19.0-trixie, krypton-trixie, lts-trixie
+Tags: 24-trixie, 24.22-trixie, 24.22.2-trixie, krypton-trixie
 Architectures: amd64, arm64v8, ppc64le, s390x
-GitCommit: fd1bf45c51970427bc899084b5381f6827722246
+GitCommit: e994dfe115899a82684caa7533380aa7d439aae1
 Directory: 24/trixie
 
-Tags: 24-trixie-slim, 24.19-trixie-slim, 24.19.0-trixie-slim, krypton-trixie-slim, lts-trixie-slim
+Tags: 24-trixie-slim, 24.22-trixie-slim, 24.22.2-trixie-slim, krypton-trixie-slim
 Architectures: amd64, arm64v8, ppc64le, s390x
-GitCommit: fd1bf45c51970427bc899084b5381f6827722246
+GitCommit: e994dfe115899a82684caa7533380aa7d439aae1
 Directory: 24/trixie-slim
 
-Tags: 22-alpine3.23, 22.23-alpine3.23, 22.23.2-alpine3.23, jod-alpine3.23
+Tags: 22-alpine3.23, 22.23-alpine3.23, 22.23.4-alpine3.23, jod-alpine3.23
 Architectures: amd64, arm32v6, arm32v7, arm64v8, s390x
-GitCommit: bc0a422bce0f729dd85790639d9f1918143f1235
+GitCommit: 80f02a542da739e6a662451d1db66456a0dea253
 Directory: 22/alpine3.23
 
-Tags: 22-alpine, 22-alpine3.24, 22.23-alpine, 22.23-alpine3.24, 22.23.2-alpine, 22.23.2-alpine3.24, jod-alpine, jod-alpine3.24
+Tags: 22-alpine, 22-alpine3.24, 22.23-alpine, 22.23-alpine3.24, 22.23.4-alpine, 22.23.4-alpine3.24, jod-alpine, jod-alpine3.24
 Architectures: amd64, arm32v6, arm32v7, arm64v8, s390x
-GitCommit: bc0a422bce0f729dd85790639d9f1918143f1235
+GitCommit: 80f02a542da739e6a662451d1db66456a0dea253
 Directory: 22/alpine3.24
 
-Tags: 22, 22-bookworm, 22.23, 22.23-bookworm, 22.23.2, 22.23.2-bookworm, jod, jod-bookworm
+Tags: 22, 22-bookworm, 22.23, 22.23-bookworm, 22.23.4, 22.23.4-bookworm, jod, jod-bookworm
 Architectures: amd64, arm32v7, arm64v8, ppc64le
-GitCommit: bc0a422bce0f729dd85790639d9f1918143f1235
+GitCommit: 80f02a542da739e6a662451d1db66456a0dea253
 Directory: 22/bookworm
 
-Tags: 22-bookworm-slim, 22-slim, 22.23-bookworm-slim, 22.23-slim, 22.23.2-bookworm-slim, 22.23.2-slim, jod-bookworm-slim, jod-slim
+Tags: 22-bookworm-slim, 22-slim, 22.23-bookworm-slim, 22.23-slim, 22.23.4-bookworm-slim, 22.23.4-slim, jod-bookworm-slim, jod-slim
 Architectures: amd64, arm32v7, arm64v8, ppc64le
-GitCommit: bc0a422bce0f729dd85790639d9f1918143f1235
+GitCommit: 80f02a542da739e6a662451d1db66456a0dea253
 Directory: 22/bookworm-slim
 
-Tags: 22-bullseye, 22.23-bullseye, 22.23.2-bullseye, jod-bullseye
-Architectures: amd64, arm32v7, arm64v8
-GitCommit: bc0a422bce0f729dd85790639d9f1918143f1235
-Directory: 22/bullseye
-
-Tags: 22-bullseye-slim, 22.23-bullseye-slim, 22.23.2-bullseye-slim, jod-bullseye-slim
-Architectures: amd64, arm32v7, arm64v8
-GitCommit: bc0a422bce0f729dd85790639d9f1918143f1235
-Directory: 22/bullseye-slim
-
-Tags: 22-trixie, 22.23-trixie, 22.23.2-trixie, jod-trixie
+Tags: 22-trixie, 22.23-trixie, 22.23.4-trixie, jod-trixie
 Architectures: amd64, arm64v8, ppc64le, s390x
-GitCommit: bc0a422bce0f729dd85790639d9f1918143f1235
+GitCommit: 80f02a542da739e6a662451d1db66456a0dea253
 Directory: 22/trixie
 
-Tags: 22-trixie-slim, 22.23-trixie-slim, 22.23.2-trixie-slim, jod-trixie-slim
+Tags: 22-trixie-slim, 22.23-trixie-slim, 22.23.4-trixie-slim, jod-trixie-slim
 Architectures: amd64, arm64v8, ppc64le, s390x
-GitCommit: bc0a422bce0f729dd85790639d9f1918143f1235
+GitCommit: 80f02a542da739e6a662451d1db66456a0dea253
 Directory: 22/trixie-slim
 
